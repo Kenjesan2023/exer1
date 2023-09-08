@@ -5,9 +5,8 @@ function displaySum() {
   let total = firstNum + secondNum;
   document.getElementById("answer").innerHTML = ` ${firstNum} + ${secondNum}, equals to ${total}` ;
 }
-document.getElementById('sumButton').addEventListener("click", displaySum);
 
-function displaySum() {
+function displayDifference() {
   let firstNum = Number(document.getElementById('firstNum').innerHTML)
   let secondNum = Number(document.getElementById('secondNum').innerHTML)
 
@@ -15,3 +14,4 @@ function displaySum() {
   document.getElementById("answer").innerHTML = ` ${firstNum} - ${secondNum}, equals to ${total}` ;
 }
 document.getElementById('sumButton').addEventListener("click", displaySum);
+document.getElementById('sumButton').addEventListener("click", displayDifference);
